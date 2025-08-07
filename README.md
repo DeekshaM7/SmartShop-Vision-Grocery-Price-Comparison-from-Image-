@@ -87,3 +87,6 @@ smartshop-vision/
 2. Anshul Shinde
 3. Dhruvi Ranwala
 4. Mannan Singh Khanka
+
+## License
+MIT License. Free to use, modify, and share.
