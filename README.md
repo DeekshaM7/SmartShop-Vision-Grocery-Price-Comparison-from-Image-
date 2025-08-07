@@ -30,41 +30,8 @@ To help users shop smarter by providing a **side-by-side price comparison** for 
 
 ---
 
-smartshop-vision/
-├── backend/                       # Backend logic (Flask/Django, OCR, Scraping)
-│   ├── app.py                    # Main backend server entry point
-│   ├── ocr/                      # OCR-related modules
-│   │   └── ocr_processor.py      # Image preprocessing and text extraction logic
-│   ├── scraping/                 # Web scraping logic for each platform
-│   │   ├── amazon_scraper.py
-│   │   ├── bigbasket_scraper.py
-│   │   └── jiomart_scraper.py
-│   ├── utils/                    # Helper functions
-│   │   ├── preprocessing.py      # Image preprocessing functions
-│   │   ├── normalizer.py         # Unit normalization (e.g., 1L vs 1000ml)
-│   │   └── fuzzy_match.py        # Item name matching using fuzzy logic
-│   └── requirements.txt          # Python dependencies for the backend
-
-├── frontend/                     # Frontend interface (React or plain JS)
-│   ├── public/                   # Static assets (HTML, icons, etc.)
-│   └── src/
-│       ├── components/           # Reusable React components
-│       ├── pages/                # Pages/views for the app
-│       ├── App.js                # Main React app file
-│       └── index.js              # Entry point for rendering React
-│   └── package.json              # Frontend project dependencies and scripts
-
-├── samples/                      # Sample input/output
-│   ├── sample_grocery_lists/     # Example grocery list images
-│   └── test_outputs/             # OCR and scraping result samples
-
-├── docs/                         # Project documentation and reports
-│   ├── presentation.pdf
-│   ├── report.pdf
-│   └── architecture_diagram.png
-
-├── README.md                     # Project overview and usage guide
-└── .gitignore                    # Files/folders to ignore in version control
+## Folder Structure
+<pre> smartshop-vision/ ├── backend/ # Backend logic (Flask/Django, OCR, Scraping) │ ├── app.py # Main backend server entry point │ ├── ocr/ # OCR-related modules │ │ └── ocr_processor.py # Image preprocessing and text extraction │ ├── scraping/ # Web scraping logic for each platform │ │ ├── amazon_scraper.py │ │ ├── bigbasket_scraper.py │ │ └── jiomart_scraper.py │ ├── utils/ # Helper functions │ │ ├── preprocessing.py # Image cleaning utilities │ │ ├── normalizer.py # Normalize item names/units │ │ └── fuzzy_match.py # Fuzzy matching for item comparison │ └── requirements.txt # Python dependencies for backend ├── frontend/ # Frontend interface (React or HTML/CSS/JS) │ ├── public/ # Static assets │ └── src/ │ ├── components/ # Reusable UI components │ ├── pages/ # UI pages/views │ ├── App.js # React root component │ └── index.js # Entry point for rendering │ └── package.json # Frontend dependencies ├── samples/ # Sample images and test data │ ├── sample_grocery_lists/ # Input examples (handwritten/printed) │ └── test_outputs/ # OCR + price results for testing ├── docs/ # Project reports and resources │ ├── presentation.pdf │ ├── report.pdf │ └── architecture_diagram.png ├── README.md # Project overview and usage guide └── .gitignore # Git ignore rules </pre>
 
 
 ## Sample Workflow
